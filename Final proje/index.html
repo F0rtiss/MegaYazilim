@@ -1,0 +1,155 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #1abc45;
+  color: white;
+}
+
+
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+
+.card {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 10px;
+  text-align: left;
+  width: 370px;
+}
+
+
+.card img {
+  height: 200px;
+  width: 370px;
+}
+
+
+.card h1 {
+  font-size: 18px;
+  padding: 10px;
+}
+
+
+.card p {
+  padding: 10px;
+}
+
+
+.card button {
+  border: none;
+  outline: none;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 18px;
+}
+
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+button a {
+text-decoration: none;
+color: #dedcdc;
+}
+</style>
+<script src="script.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <h1>Konya </h1>
+  <p>En güncel haberler, makaleler, videolar ve daha fazlası için web sitemizi takip edin.</p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Etkinlik ve kurslar</a>
+  <a href="https://www.konhaber.com/?ysclid=lrxplpgaz879821256">Haberler</a>
+  <a href="https://kentrehberi.konya.bel.tr/#/rehber/">Kent Rehberi</a>
+  <a href="https://www.youtube.com/@konyabuyuksehirbel/videos">Videolar</a>
+  <a href="https://tr.wikipedia.org/wiki/Konya">Konya</a>
+  <a href="iletişim.html">İletişim</a>
+</div>
+
+<div class="main">
+  <div class="card">
+    <img src="https://th.bing.com/th/id/OIP.5A0Li8P6saGsZdoRH7e-ugHaEJ?pid=ImgDet&w=191&h=95.5&c=7&dpr=1,3" alt="Kitap">
+    <h1>Hızlı okuma kursu</h1>
+    <p>Bu kursta hızlı ve akıcı bir şekilde konuşma becerisini ediniceksiniz.</p>
+    <button id="Başvur"><a href="Basvuru.html">Başvur</a></button>
+  </div>
+
+  <div class="card">
+    <img src="https://th.bing.com/th/id/OIP.4mwt1loRbcZZb0dio8IRQQHaEc?pid=ImgDet&w=191&h=115.08974358974359&c=7&dpr=1,3" alt="Fotoğraf">
+    <h1>Fotoğrafcılık Kursu</h1>
+    <p>Fotoğraf çekmenim püf noktaları ve dahası için başvurun.</p>
+    <button id="Başvur"><a href="Basvuru.html">Başvur</a></button>
+  </div>
+  
+  <div class="card">
+    <img src="https://image.hurimg.com/i/hurriyet/75/1200x675/5c0a2f3fc03c0e14189aaf2a.jpg" alt="etliekmek">
+    <h1>Etliekmek yeme yarışması</h1>
+    <p>Etliekmek, Konya'nın en meşhur lezzetlerinden biridir. Bu nefis yemeği kim daha hızlı yiyebilir?</p>
+    <button id="Başvur"><a href="Basvuru.html">Başvur</a></button>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Tüm hakları saklıdır. © 2024 Web Ana Sayfası</p>
+</div>
+
+</body>
+</html>

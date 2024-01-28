@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başvuru</title>
+    <style>
+      body {
+          background-color: #66A6A8;
+      }
+
+        form {
+          width: 500px;
+          margin: 0 auto;
+          border: 1px solid #ccc;
+          padding: 20px;
+          background-color: #f0f0f0;
+        }
+      
+        p {
+          margin: 10px 0;
+        }
+      
+        button, select, textarea {
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+        }
+      
+        button[type="text"], input[type="email"], select, textarea {
+          width: 300px;
+          border: 1px solid #999;
+          padding: 5px;
+        }
+      
+        button[type="radio"], input[type="checkbox"] {
+          margin-right: 5px;
+        }
+      
+        button[id="submit"] {
+          width: 100px;
+          border: none;
+          padding: 10px;
+          background-color: #79A7A8;
+          color: white;
+          cursor: pointer;
+        }
+      
+        button[id="submit"]:hover {
+          background-color: #66A6A8;
+        }
+      </style>
+</head>
+<body>
+    <form>
+        <p>Adınız: <input type="text" name="ad" required></p>
+        <p>Soyadınız: <input type="text" name="soyad" required></p>
+        <p>E-posta Adresiniz: <input type="email" name="email" required></p>
+        <p>Etkinlikler veya kurslar: 
+          <select name="etk">
+            <option value="1.">Hızlı okuma</option>
+            <option value="2.">Fotoğrafcılık</option>
+            <option value="3.">Etliekmek yeme</option>
+          </select>
+        </p>
+        <p>İstek ve önerileriniz: <textarea name="motivasyon" rows="5" cols="40"></textarea></p>
+        <button onclick="mesajGonder()" id="submit" value="Başvur">Başvur</button>
+      </form>
+      <script>
+        function mesajGonder() {
+          alert("Başvurunuz Gönderildi.");
+        }
+      </script>
+</body>
+</html>
+  
+  
+  
